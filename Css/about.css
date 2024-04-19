@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Russo+One:wght@400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    color: #F7F6F2;
+    height: auto;
+    z-index: 1000;
+    margin-top: 20px;
+    background-color: #333;
+}
+
+.navbar a {
+    color: #f7f2f2;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    transform: none;
+    margin-top: 10px;
+}
+
+.nav-links li {
+    margin: 0 30px;
+    font-size: 2vmin;
+    font-weight: bold;
+}
+
+.nav-links li:hover {
+    background-color: #FECC00;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.navbar h1 {
+    font-family: 'Russo One', sans-serif;
+    color: #E4022F;
+    height: 5px;
+    font-size: 3vmin;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.user-name {
+    font-size: 2vmin;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.fa-utensils {
+    font-size: 6vmin;
+    color: #f7f2f2;
+}
+
+.loginbtn {
+    padding: 5px 10px;
+    font-size: 2vmin;
+    background-color: #E4022F;
+    color: #F7F6F2;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.loginbtn:hover {
+    background-color: #FECC00;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.about-us {
+    background-color: #F7F6F2;
+    margin-top: 10vmin;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+
+.heading {
+    color: #E4022F;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 35px;
+
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.about-us-content {
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+
+.about-us-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-us-content p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about-us-content button {
+    display: inline-block;
+    background-color: #E4022F;
+    color: #f7f2f2;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.about-us-content button:hover {
+    background-color: #FECC00;
+    transform: scale(1.1);
+}
+
+.about-us-image {
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+
+.about-us img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.Our-story {
+    background-color: rgba(229, 197, 197, 0.2);
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+
+.Our-story-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.Our-story-content {
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+
+.Our-story-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.Our-story-content p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.Our-story-image {
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+
+.Our-story img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-container h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #E4022F;
+}
+
+.contact-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label,
+form input,
+form textarea,
+form input[type="submit"] {
+    width: 100%;
+    margin-bottom: 15px;
+    color: #E4022F;
+    font-size: 1.5rem
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    background-color: #E4022F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #FECC00;
+}
+
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+
+
+    .menu-btn {
+        display: block;
+    }
+
+    .header-content {
+        margin-top: 150px;
+    }
+
+    .navbar {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+        height: 75px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .navbar a {
+        font-size: 3.5vmin;
+
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(75, 95, 88);
+        transition: all 0.5s ease;
+        margin-top: -900px;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    .heading {
+        margin-top: 50px;
+    }
+
+    .about-us-container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0px 40px;
+    }
+
+    .about-us-content {
+        width: 100%;
+        margin: 35px 0;
+    }
+
+    .about-us-content h2 {
+        font-size: 30px;
+    }
+
+    .header-content p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .about-us-content button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .about-us-image {
+        width: 100%;
+    }
+
+    .Our-story-container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0px 40px;
+
+    }
+
+    .Our-story-content {
+        width: 100%;
+        margin: 35px 0;
+    }
+
+    .Our-story-content h2 {
+        font-size: 30px;
+    }
+
+    .header-content p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .Our-story-image {
+        width: 100%;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
